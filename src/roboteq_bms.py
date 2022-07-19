@@ -133,7 +133,7 @@ class roboteq_bmsComponent(RComponent):
 					emptys.append(False)
 				else:
 					emptys.append(True)
-			except ValueError, e:
+			except ValueError(e):
 				rospy.logerr('%s::readyState: error reading ?BSC - response (%s): %s', rospy.get_name(), line_read, e)
 				emptys.append(True)
 
@@ -151,7 +151,7 @@ class roboteq_bmsComponent(RComponent):
 					emptys.append(False)
 				else:
 					emptys.append(True)
-			except ValueError, e:
+			except ValueError(e):
 				rospy.logerr('%s::readyState: error reading ?A 1 - response (%s):: %s', rospy.get_name(), line_read, e)
 				emptys.append(True)
 
@@ -165,7 +165,7 @@ class roboteq_bmsComponent(RComponent):
 					emptys.append(False)
 				else:
 					emptys.append(True)
-			except ValueError, e:
+			except ValueError(e):
 				rospy.logerr('%s::readyState: error reading ?V 1 - response (%s):: %s', rospy.get_name(), line_read, e)
 				emptys.append(True)
 
@@ -180,7 +180,7 @@ class roboteq_bmsComponent(RComponent):
 					emptys.append(False)
 				else:
 					emptys.append(True)
-			except ValueError, e:
+			except ValueError(e):
 				rospy.logerr('%s::readyState: error reading ?T 1 - response (%s):: %s', rospy.get_name(), line_read, e)
 				emptys.append(True)
 
@@ -194,7 +194,7 @@ class roboteq_bmsComponent(RComponent):
 					emptys.append(False)
 				else:
 					emptys.append(True)
-			except ValueError, e:
+			except ValueError(e):
 				rospy.logerr('%s::readyState: error reading ?BMF - response(%s): %s', rospy.get_name(), line_read, e)
 				emptys.append(True)
 
@@ -208,7 +208,7 @@ class roboteq_bmsComponent(RComponent):
 					emptys.append(False)
 				else:
 					emptys.append(True)
-			except ValueError, e:
+			except ValueError(e):
 				rospy.logerr('%s::readyState: error reading ?V - response(%s): %s', rospy.get_name(), line_read, e)
 				emptys.append(True)
 
@@ -222,7 +222,7 @@ class roboteq_bmsComponent(RComponent):
 					emptys.append(False)
 				else:
 					emptys.append(True)
-			except ValueError, e:
+			except ValueError(e):
 				rospy.logerr('%s::readyState: error reading ?A - response (%s): %s', rospy.get_name(), line_read, e)
 				emptys.append(True)
 
